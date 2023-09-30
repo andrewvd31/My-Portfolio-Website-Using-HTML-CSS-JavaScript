@@ -35,9 +35,9 @@ ScrollReveal({
     delay: 200,
 })
 
-ScrollReveal().reveal('.home-content,.contact,.about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content,.contact,.about-img,.port-left', {origin: 'left'});
 
-ScrollReveal().reveal('.home-img', {origin: 'right'})
+ScrollReveal().reveal('.home-img,.port-right', {origin: 'right'})
 
 ScrollReveal().reveal('.about-content', {origin: 'top'})
 
