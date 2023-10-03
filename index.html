@@ -7,8 +7,8 @@
     <title>Techie Andrew</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./Slick/slick-1.8.1/slick/slick-theme.css" />
 </head>
 <body>
     <!--imp!: Header section below-->
@@ -68,10 +68,10 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="portfolio-main-container">
             <!-- imp! HTML,CSS-->
-            <div class="portfolio-container swiper mySwiper port-left">
+            <div class="port-left">
                 <h3><span>HTML</span> and <span>CSS</span></h3>
-                <div class="swiper-wrapper">
-                    <div class="portfolio-box swiper-slide">
+                <div class="portfolio-container responsive">
+                    <div class="portfolio-box">
                         <img src="./Images/HTML and CSS/Grocery Website.png" alt="">
                         <div class="portfolio-layer">
                             <h4>A Grocery Website</h4>
@@ -80,7 +80,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/HTML and CSS/University Website.png" alt="">
                         <div class="portfolio-layer">
                             <h4>An University Website</h4>
@@ -89,7 +89,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/HTML and CSS/Hometown Website.png" alt="">
                         <div class="portfolio-layer">
                             <h4>A Hometown Website</h4>
@@ -101,10 +101,10 @@
                 </div>
             </div>
             <!-- imp! Bootstrap -->
-            <div class="portfolio-container swiper mySwiper port-right">
+            <div class="port-right">
                 <h3><span>Boot</span>strap</h3>
-                <div class="swiper-wrapper">
-                    <div class="portfolio-box swiper-slide">
+                <div class="portfolio-container responsive">
+                    <div class="portfolio-box">
                         <img src="./Images/Bootstrap/Image Filter Page BS.png" alt="">
                         <div class="portfolio-layer">
                             <h4>Image filter page</h4>
@@ -116,10 +116,10 @@
                 </div>
             </div>
             <!-- imp! Javascript -->
-            <div class="portfolio-container swiper mySwiper port-left">
+            <div class="port-left">
                 <h3><span>Java</span>Script</h3>
-                <div class="swiper-wrapper">
-                    <div class="portfolio-box swiper-slide">
+                <div class="portfolio-container responsive">
+                    <div class="portfolio-box">
                         <img src="./Images/JavaScript/Digital Clock.png" alt="">
                         <div class="portfolio-layer">
                             <h4>A Digital Clock</h4>
@@ -128,7 +128,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/JavaScript/Calculator.png" alt="">
                         <div class="portfolio-layer">
                             <h4>A Calculator</h4>
@@ -137,7 +137,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/JavaScript/Dice Challenge Game.png" alt="">
                         <div class="portfolio-layer">
                             <h4>A Dice Challenge Game</h4>
@@ -146,7 +146,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/JavaScript/Random Password Generator.png" alt="">
                         <div class="portfolio-layer">
                             <h4>Random Password Generator</h4>
@@ -155,7 +155,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/JavaScript/Colour Scheme Generator.png" alt="">
                         <div class="portfolio-layer">
                             <h4>Colour Scheme Generator</h4>
@@ -167,10 +167,10 @@
                 </div>
             </div>
             <!-- imp! React -->
-            <div class="portfolio-container swiper mySwiper port-right">
+            <div class="port-right">
                 <h3><span>Rea</span>ct</h3>
-                <div class="swiper-wrapper">
-                    <div class="portfolio-box swiper-slide">
+                <div class="portfolio-container responsive">
+                    <div class="portfolio-box">
                         <img src="./Images/React/Educational Website.png" alt="">
                         <div class="portfolio-layer">
                             <h4>Educational website</h4>
@@ -179,7 +179,7 @@
                                     class="bx bx-link-external"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-box swiper-slide">
+                    <div class="portfolio-box">
                         <img src="./Images/React/Quiz App.png" alt="">
                         <div class="portfolio-layer">
                             <h4>Quiz app</h4>
@@ -217,27 +217,52 @@
         </div>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="Slick/slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            var swiper = new Swiper(".mySwiper", {
-                effect: "flip",
-                grabCursor: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: true,
-                },
-                loop: true,
-                slidesPerView: 'auto',
-            });
-        })
-    </script>
-    <script>
-        (function(){
+        (function () {
             emailjs.init('NxyXVGL-bYEbC_CS_');
         })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.responsive').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                autoplay: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
     </script>
 </body>
 

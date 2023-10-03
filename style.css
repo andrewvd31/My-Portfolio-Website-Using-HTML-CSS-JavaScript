@@ -8,7 +8,7 @@
 
 html{font-size: 62.5%;overflow-x: hidden;}
 
-body{background-color: var(--bg-color);color: var(--text-color);}
+body{background-color: var(--bg-color);color: var(--text-color);overflow-x: hidden;}
 
 .header{position: fixed;top: 0;left: 0;width: 100%;padding: 2rem 9%;display: flex;justify-content: space-between;align-items: center;z-index:100;background-color: var(--bg-color);}
 
@@ -40,16 +40,6 @@ span{color: var(--main-color);}
 
 .home-img img{animation: flatImage 4s ease-in-out infinite;}
 
-.swiper {max-width: 575px;width: 90%;height: 325px;padding: 50px;margin-bottom: 18rem;}
-
-.swiper-slide {display: flex;align-items: center;justify-content: center;font-size: 22px;font-weight: bold;color: #fff;}
-
-.swiper-slide img {display: block;width: 100%;}
-
-.swiper-button-next, .swiper-button-prev{margin: -70px;}
-
-.portfolio-main-container{display: flex;justify-content: center;gap: 50px;flex-wrap: wrap;}
-
 @keyframes flatImage {
     0%{transform: translateY(0);}
     50%{transform: translateY(-2.4rem);}
@@ -78,19 +68,17 @@ span{color: var(--main-color);}
 
 .about-content p{font-size: 1.6rem;margin: 2rem 0 3rem;}
 
-.portfolio{height: auto;padding-bottom: 120px;}
+section.portfolio{padding: 10rem 3% 9rem;}
 
-.portfolio-main-container{position: relative;}
+.portfolio{height: auto;padding-bottom: 120px;}
 
 .portfolio h3{text-align: center;margin: 6rem 0;font-size: 4.2rem;}
 
 .portfolio h2{margin-bottom: 4rem;}
 
-.portfolio-container{display: grid;grid-template-columns: repeat(3,1fr); align-items: center;gap: 2.5rem;}
+.portfolio-container .portfolio-box{position: relative;border-radius: 2rem;box-shadow: 0 0 1rem var(--bg-color);overflow: hidden;margin: 2rem;}
 
-.portfolio-container .portfolio-box{position: relative;border-radius: 2rem;box-shadow: 0 0 1rem var(--bg-color);overflow: hidden;display: flex;}
-
-.portfolio-box img{width: 100%;height: 100%;transition: 0.5s ease;}
+.portfolio-box img{width: 100%;height: 250px;transition: 0.5s ease;}
 
 .portfolio-box:hover img{transform: scale(1.1);}
 
@@ -159,6 +147,7 @@ span{color: var(--main-color);}
     .about img{width: 70vw;margin-top: 4rem;}
     .portfolio h2{margin-bottom: 3rem;}
     .portfolio-container{grid-template-columns: repeat(2,1fr);}
+    .portfolio-box img{height: 350px;}
 } 
 
 @media (max-width: 617px){
@@ -166,7 +155,7 @@ span{color: var(--main-color);}
     .footer{flex-direction: column-reverse;}
     .footer p{text-align: center;margin-top: 2rem;}
     .about-img img{margin-right: 0;}
-    .swiper{height: 200px;}
+    .portfolio-box img{object-fit: cover;height: 250px;}
 }
 
 @media (max-width:450px) {
